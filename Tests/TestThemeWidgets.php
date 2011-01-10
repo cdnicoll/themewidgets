@@ -9,10 +9,9 @@ class ThemeWidgetsTest extends PHPUnit_Framework_TestCase
 	public function setUp() {
 		Zend_Loader_Autoloader::getInstance();
 		$this->_cache_dir = $this->mkdir();
-		//$this->_themeWidget = new ThemeWidgets(self::DEFAULT_URL, self::DEFAULT_AMOUNT_OF_ARTICLES, self::DEFAULT_CACHE_NAME);
 		$this->_themeWidget = ThemeWidgets::factory(self::DEFAULT_URL, self::DEFAULT_AMOUNT_OF_ARTICLES, self::DEFAULT_CACHE_NAME);
-		$this->_themeWidget->setCacheTmpPath($this->_cache_dir);
-		$this->_themeWidget->setSideBarImageDir('../images/sidebar-images');
+		$this->_themeWidget->setCacheTmpPath($this->_cache_dir);				// inject new directory
+		$this->_themeWidget->setSideBarImageDir('../images/sidebar-images');	// inject images for sidebar
 	}
 	
 	public function tearDown() {
@@ -81,6 +80,29 @@ class ThemeWidgetsTest extends PHPUnit_Framework_TestCase
 	}
 	
 	public function testImageNotFoundToCacheFile() {}
+
+	
+	public function testSetDirectoryToRealDir() {
+		$tw = $this->_themeWidget;
+		try {
+			$tw->setSideBarImageDir($this->_cache_dir);
+		}
+		catch (Exception $ex) {
+			return;
+		}
+		$this->assertTrue(true);
+	}
+	
+	public function testSetDirectoryToBadDir() {
+		$tw = $this->_themeWidget;
+		try {
+			$tw->setSideBarImageDir('/path/to/foo');
+		}
+		catch (Exception $ex) {
+			return;
+		}
+		$this->assertTrue(false);
+	}
 	
 	// Helper Methods
 

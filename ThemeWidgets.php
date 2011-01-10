@@ -98,6 +98,10 @@ class ThemeWidgets
 	}
 	
 	public function setCacheTmpPath($path) {
+		if(!is_dir($path)) {
+			throw new Exception("The directory ".$path." does not exist ");
+		}
+		
 		$this->_tmpDir = $path;
 	}
 	
