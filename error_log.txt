@@ -338,3 +338,10 @@ Stack trace:
 #4 /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php(21): ThemeWidgetSFContainer::lastCacheDate()
 #5 {main}
   thrown in /usr/local/zend/share/ZendFramework/library/Zend/Cache.php on line 209
+[10-Jan-2011 09:14:12] PHP Catchable fatal error:  Argument 1 passed to ThemeWidgets::__construct() must be an array, string given, called in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php on line 71 and defined in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php on line 45
+[10-Jan-2011 09:14:12] PHP Stack trace:
+[10-Jan-2011 09:14:12] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 09:14:12] PHP   2. ThemeWidgetContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:17
+[10-Jan-2011 09:14:12] PHP   3. ThemeWidgetContainer::getThemeWidgetObject() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetContainer.php:35
+[10-Jan-2011 09:14:12] PHP   4. ThemeWidgets::factory() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetContainer.php:40
+[10-Jan-2011 09:14:12] PHP   5. ThemeWidgets->__construct() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php:71

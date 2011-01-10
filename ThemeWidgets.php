@@ -33,13 +33,31 @@ class ThemeWidgets
 	protected static $_instance = NULL;
 	
 	
-	
+	/*
 	public function __construct($url, $amountOfArticles,$cacheFileName) {
 		$this->_rssUrl = $url;
 		$this->_rssRefreshTime = $amountOfArticles;
 		$this->_tmpDir = self::TMP_PATH;
 		$this->_sidebar_image_dir = self::SIDEBAR_IMAGES;
 		$this->_cacheFileName = $cacheFileName;
+	}
+	*/
+	public function __construct(Array $config = array()) {
+		if(isset($config['url'])) {
+			$this->_rssUrl = $config['url'];
+		}
+		
+		if(isset($config['amountOfArticles'])) {
+			$this->_maxRssArticles = $config['amountOfArticles'];
+		}
+		
+		if(isset($config['cacheName'])) {
+			$this->_cacheFileName = $config['cacheName'];
+		}
+		
+		$this->_tmpDir = self::TMP_PATH;
+		
+		$this->_sidebar_image_dir = self::SIDEBAR_IMAGES;
 	}
 	
 	/**
@@ -50,7 +68,14 @@ class ThemeWidgets
 	 */
 	public static function factory($url, $amountOfArticles,$cacheFileName) {
 		if (self::$_instance == NULL) {
-			self::$_instance = new ThemeWidgets($url, $amountOfArticles, $cacheFileName);
+			
+			$config = array(
+				'url'=>$url,
+				'amountOfArticles'=>$amountOfArticles,
+				'cacheName'=>$cacheFileName
+			);
+			
+			self::$_instance = new ThemeWidgets($config);
 		}
 		
 		return self::$_instance;
