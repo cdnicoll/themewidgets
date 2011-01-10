@@ -345,3 +345,16 @@ Stack trace:
 [10-Jan-2011 09:14:12] PHP   3. ThemeWidgetContainer::getThemeWidgetObject() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetContainer.php:35
 [10-Jan-2011 09:14:12] PHP   4. ThemeWidgets::factory() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetContainer.php:40
 [10-Jan-2011 09:14:12] PHP   5. ThemeWidgets->__construct() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php:71
+[10-Jan-2011 10:54:23] PHP Fatal error:  Using $this when not in object context in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php on line 44
+[10-Jan-2011 10:54:23] PHP Stack trace:
+[10-Jan-2011 10:54:23] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 10:54:23] PHP   2. ThemeWidgetSFContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:21
+[10-Jan-2011 10:54:23] PHP   3. ThemeWidgetSFContainer::createThemeWidgetObject() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php:35
+[10-Jan-2011 10:55:50] PHP Fatal error:  Call to a member function retrieve() on a non-object in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php on line 36
+[10-Jan-2011 10:55:50] PHP Stack trace:
+[10-Jan-2011 10:55:50] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 10:55:50] PHP   2. ThemeWidgetSFContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:21
+[10-Jan-2011 10:57:00] PHP Fatal error:  Class name must be a valid object or a string in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php on line 42
+[10-Jan-2011 10:57:00] PHP Stack trace:
+[10-Jan-2011 10:57:00] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 10:57:00] PHP   2. ThemeWidgetSFContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:21
