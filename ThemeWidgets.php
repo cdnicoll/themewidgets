@@ -8,9 +8,7 @@ class ThemeWidgets
 	// Constants for RSS feed	
 	const CACHE_NAME = 'CacheFile';
 	const RSS_REFRESH_TIME = 10;									// refresh time on cache (22 hours (79200))
-	const MAX_RSS_ARTICLES = 2;										// number of articles to pull
-	const RSS_URL = "http://feeds.feedburner.com/benefitsworld";	// default RSS link
-	
+	const MAX_RSS_ARTICLES = 2;										// number of articles to pull	
 	//
 	const SIDEBAR_IMAGES = './images/sidebar-images/';
 	const TMP_PATH = '../../../../files/localtests-tmp/';
@@ -32,6 +30,9 @@ class ThemeWidgets
 	protected $_tmpDir;
 	protected $_sidebar_image_dir;
 	protected $_cacheFileName;
+	protected static $_instance = NULL;
+	
+	
 	
 	public function __construct($url, $amountOfArticles,$cacheFileName) {
 		$this->_rssUrl = $url;
@@ -39,6 +40,20 @@ class ThemeWidgets
 		$this->_tmpDir = self::TMP_PATH;
 		$this->_sidebar_image_dir = self::SIDEBAR_IMAGES;
 		$this->_cacheFileName = $cacheFileName;
+	}
+	
+	/**
+	 * Implementation of a basic factory method
+	 * @param string $url
+	 * @param int $amountOfArticles
+	 * @param string $cacheFileName
+	 */
+	public static function factory($url, $amountOfArticles,$cacheFileName) {
+		if (self::$_instance == NULL) {
+			self::$_instance = new ThemeWidgets($url, $amountOfArticles, $cacheFileName);
+		}
+		
+		return self::$_instance;
 	}
 	
 	public function setRssUrl($url) {

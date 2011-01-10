@@ -9,9 +9,14 @@ date_default_timezone_set('America/Los_Angeles');
 require_once '../../library/Zend/Loader/Autoloader.php';
 Zend_Loader_Autoloader::getInstance();
 
-include_once 'ThemeWidgetStatic.php';
+include_once 'ThemeWidgetContainer.php';
+include_once('ThemeWidgetSFContainer.php');
 // =============================================================================
 
 
-$date = ThemeWidgetStatic::lastCacheDate();
+$date = ThemeWidgetContainer::lastCacheDate();
+echo $date;
+echo '<hr>';
+
+$date = ThemeWidgetSFContainer::lastCacheDate();
 echo $date;

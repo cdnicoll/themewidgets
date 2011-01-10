@@ -67,3 +67,274 @@
 [13-Dec-2010 12:38:22] PHP Notice:  Undefined variable: extraLifetime in /usr/local/zend/share/ZendFramework/library/Zend/Cache/Core.php on line 652
 [13-Dec-2010 12:38:23] PHP Warning:  Missing argument 2 for Zend_Cache_Core::touch(), called in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php on line 123 and defined in /usr/local/zend/share/ZendFramework/library/Zend/Cache/Core.php on line 646
 [13-Dec-2010 12:38:23] PHP Notice:  Undefined variable: extraLifetime in /usr/local/zend/share/ZendFramework/library/Zend/Cache/Core.php on line 652
+[10-Jan-2011 08:00:31] PHP Fatal error:  Access to undeclared static property: ThemeWidgets::$instance in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php on line 36
+[10-Jan-2011 08:00:31] PHP Stack trace:
+[10-Jan-2011 08:00:31] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:00:31] PHP   2. ThemeWidgetContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:16
+[10-Jan-2011 08:00:31] PHP   3. ThemeWidgetContainer::getThemeWidgetObject() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetContainer.php:35
+[10-Jan-2011 08:00:31] PHP   4. ThemeWidgets::factory() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetContainer.php:40
+[10-Jan-2011 08:01:47] PHP Fatal error:  Access to undeclared static property: ThemeWidgets::$instance in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php on line 40
+[10-Jan-2011 08:01:47] PHP Stack trace:
+[10-Jan-2011 08:01:47] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:01:47] PHP   2. ThemeWidgetContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:16
+[10-Jan-2011 08:01:47] PHP   3. ThemeWidgetContainer::getThemeWidgetObject() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetContainer.php:35
+[10-Jan-2011 08:01:47] PHP   4. ThemeWidgets::factory() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetContainer.php:40
+[10-Jan-2011 08:01:54] PHP Fatal error:  Call to a member function retrieve() on a non-object in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetContainer.php on line 36
+[10-Jan-2011 08:01:54] PHP Stack trace:
+[10-Jan-2011 08:01:54] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:01:54] PHP   2. ThemeWidgetContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:16
+[10-Jan-2011 08:02:01] PHP Fatal error:  Call to a member function retrieve() on a non-object in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetContainer.php on line 36
+[10-Jan-2011 08:02:01] PHP Stack trace:
+[10-Jan-2011 08:02:01] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:02:01] PHP   2. ThemeWidgetContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:16
+[10-Jan-2011 08:02:30] PHP Fatal error:  Call to a member function retrieve() on a non-object in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetContainer.php on line 36
+[10-Jan-2011 08:02:30] PHP Stack trace:
+[10-Jan-2011 08:02:30] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:02:30] PHP   2. ThemeWidgetContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:16
+[10-Jan-2011 08:02:38] PHP Fatal error:  Class name must be a valid object or a string in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetContainer.php on line 36
+[10-Jan-2011 08:02:38] PHP Stack trace:
+[10-Jan-2011 08:02:38] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:02:38] PHP   2. ThemeWidgetContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:16
+[10-Jan-2011 08:03:10] PHP Fatal error:  Class name must be a valid object or a string in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetContainer.php on line 36
+[10-Jan-2011 08:03:10] PHP Stack trace:
+[10-Jan-2011 08:03:10] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:03:10] PHP   2. ThemeWidgetContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:16
+[10-Jan-2011 08:03:17] PHP Fatal error:  Call to a member function retrieve() on a non-object in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetContainer.php on line 36
+[10-Jan-2011 08:03:17] PHP Stack trace:
+[10-Jan-2011 08:03:17] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:03:17] PHP   2. ThemeWidgetContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:16
+[10-Jan-2011 08:03:17] PHP Fatal error:  Call to a member function retrieve() on a non-object in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetContainer.php on line 36
+[10-Jan-2011 08:03:17] PHP Stack trace:
+[10-Jan-2011 08:03:17] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:03:17] PHP   2. ThemeWidgetContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:16
+[10-Jan-2011 08:03:18] PHP Fatal error:  Call to a member function retrieve() on a non-object in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetContainer.php on line 36
+[10-Jan-2011 08:03:18] PHP Stack trace:
+[10-Jan-2011 08:03:18] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:03:18] PHP   2. ThemeWidgetContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:16
+[10-Jan-2011 08:03:19] PHP Fatal error:  Call to a member function retrieve() on a non-object in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetContainer.php on line 36
+[10-Jan-2011 08:03:19] PHP Stack trace:
+[10-Jan-2011 08:03:19] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:03:19] PHP   2. ThemeWidgetContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:16
+[10-Jan-2011 08:03:55] PHP Fatal error:  Call to a member function retrieve() on a non-object in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetContainer.php on line 36
+[10-Jan-2011 08:03:55] PHP Stack trace:
+[10-Jan-2011 08:03:55] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:03:55] PHP   2. ThemeWidgetContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:16
+[10-Jan-2011 08:19:02] PHP Fatal error:  Call to a member function retrieve() on a non-object in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php on line 36
+[10-Jan-2011 08:19:02] PHP Stack trace:
+[10-Jan-2011 08:19:02] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:19:02] PHP   2. ThemeWidgetSFContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:21
+[10-Jan-2011 08:20:54] PHP Fatal error:  Call to undefined method sfServiceContainerBuilder::retrieve() in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php on line 36
+[10-Jan-2011 08:20:54] PHP Stack trace:
+[10-Jan-2011 08:20:54] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:20:54] PHP   2. ThemeWidgetSFContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:21
+[10-Jan-2011 08:21:11] PHP Parse error:  syntax error, unexpected T_STRING, expecting T_FUNCTION in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php on line 8
+[10-Jan-2011 08:21:11] PHP Stack trace:
+[10-Jan-2011 08:21:11] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:21:23] PHP Fatal error:  Call to undefined method sfServiceContainerBuilder::retrieve() in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php on line 34
+[10-Jan-2011 08:21:23] PHP Stack trace:
+[10-Jan-2011 08:21:23] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:21:23] PHP   2. ThemeWidgetSFContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:21
+[10-Jan-2011 08:21:53] PHP Fatal error:  Call to undefined method sfServiceContainerBuilder::retrieve() in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php on line 34
+[10-Jan-2011 08:21:53] PHP Stack trace:
+[10-Jan-2011 08:21:53] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:21:53] PHP   2. ThemeWidgetSFContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:21
+[10-Jan-2011 08:26:57] PHP Fatal error:  Call to undefined method sfServiceContainerBuilder::retrieve() in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php on line 34
+[10-Jan-2011 08:26:57] PHP Stack trace:
+[10-Jan-2011 08:26:57] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:26:57] PHP   2. ThemeWidgetSFContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:21
+[10-Jan-2011 08:27:34] PHP Warning:  Missing argument 2 for ThemeWidgets::__construct() in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php on line 37
+[10-Jan-2011 08:27:34] PHP Stack trace:
+[10-Jan-2011 08:27:34] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:27:34] PHP   2. ThemeWidgetSFContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:21
+[10-Jan-2011 08:27:34] PHP   3. ThemeWidgetSFContainer::getThemeWidgetObject() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php:33
+[10-Jan-2011 08:27:34] PHP   4. sfServiceContainer->__get() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:0
+[10-Jan-2011 08:27:34] PHP   5. sfServiceContainerBuilder->getService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:276
+[10-Jan-2011 08:27:34] PHP   6. sfServiceContainerBuilder->createService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:90
+[10-Jan-2011 08:27:34] PHP   7. ReflectionClass->newInstanceArgs() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:248
+[10-Jan-2011 08:27:35] PHP   8. ThemeWidgets->__construct() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php:0
+[10-Jan-2011 08:27:35] PHP Warning:  Missing argument 3 for ThemeWidgets::__construct() in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php on line 37
+[10-Jan-2011 08:27:35] PHP Stack trace:
+[10-Jan-2011 08:27:35] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:27:35] PHP   2. ThemeWidgetSFContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:21
+[10-Jan-2011 08:27:35] PHP   3. ThemeWidgetSFContainer::getThemeWidgetObject() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php:33
+[10-Jan-2011 08:27:35] PHP   4. sfServiceContainer->__get() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:0
+[10-Jan-2011 08:27:35] PHP   5. sfServiceContainerBuilder->getService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:276
+[10-Jan-2011 08:27:35] PHP   6. sfServiceContainerBuilder->createService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:90
+[10-Jan-2011 08:27:35] PHP   7. ReflectionClass->newInstanceArgs() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:248
+[10-Jan-2011 08:27:35] PHP   8. ThemeWidgets->__construct() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php:0
+[10-Jan-2011 08:27:35] PHP Notice:  Undefined variable: amountOfArticles in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php on line 39
+[10-Jan-2011 08:27:35] PHP Stack trace:
+[10-Jan-2011 08:27:35] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:27:35] PHP   2. ThemeWidgetSFContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:21
+[10-Jan-2011 08:27:35] PHP   3. ThemeWidgetSFContainer::getThemeWidgetObject() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php:33
+[10-Jan-2011 08:27:35] PHP   4. sfServiceContainer->__get() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:0
+[10-Jan-2011 08:27:35] PHP   5. sfServiceContainerBuilder->getService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:276
+[10-Jan-2011 08:27:35] PHP   6. sfServiceContainerBuilder->createService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:90
+[10-Jan-2011 08:27:35] PHP   7. ReflectionClass->newInstanceArgs() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:248
+[10-Jan-2011 08:27:35] PHP   8. ThemeWidgets->__construct() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php:0
+[10-Jan-2011 08:27:35] PHP Notice:  Undefined variable: cacheFileName in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php on line 42
+[10-Jan-2011 08:27:35] PHP Stack trace:
+[10-Jan-2011 08:27:35] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:27:35] PHP   2. ThemeWidgetSFContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:21
+[10-Jan-2011 08:27:35] PHP   3. ThemeWidgetSFContainer::getThemeWidgetObject() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php:33
+[10-Jan-2011 08:27:35] PHP   4. sfServiceContainer->__get() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:0
+[10-Jan-2011 08:27:35] PHP   5. sfServiceContainerBuilder->getService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:276
+[10-Jan-2011 08:27:35] PHP   6. sfServiceContainerBuilder->createService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:90
+[10-Jan-2011 08:27:35] PHP   7. ReflectionClass->newInstanceArgs() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:248
+[10-Jan-2011 08:27:35] PHP   8. ThemeWidgets->__construct() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php:0
+[10-Jan-2011 08:27:35] PHP Fatal error:  Uncaught exception 'Zend_Cache_Exception' with message 'Invalid id or tag : must be a string' in /usr/local/zend/share/ZendFramework/library/Zend/Cache.php:209
+Stack trace:
+#0 /usr/local/zend/share/ZendFramework/library/Zend/Cache/Core.php(667): Zend_Cache::throwException('Invalid id or t...')
+#1 /usr/local/zend/share/ZendFramework/library/Zend/Cache/Core.php(302): Zend_Cache_Core::_validateIdOrTag(NULL)
+#2 /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php(144): Zend_Cache_Core->load(NULL)
+#3 /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php(34): ThemeWidgets->retrieve('cachedDate')
+#4 /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php(21): ThemeWidgetSFContainer::lastCacheDate()
+#5 {main}
+  thrown in /usr/local/zend/share/ZendFramework/library/Zend/Cache.php on line 209
+[10-Jan-2011 08:28:21] PHP Warning:  Missing argument 2 for ThemeWidgets::__construct() in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php on line 37
+[10-Jan-2011 08:28:21] PHP Stack trace:
+[10-Jan-2011 08:28:21] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:28:21] PHP   2. ThemeWidgetSFContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:21
+[10-Jan-2011 08:28:21] PHP   3. ThemeWidgetSFContainer::getThemeWidgetObject() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php:33
+[10-Jan-2011 08:28:21] PHP   4. sfServiceContainer->__get() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:0
+[10-Jan-2011 08:28:21] PHP   5. sfServiceContainerBuilder->getService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:276
+[10-Jan-2011 08:28:21] PHP   6. sfServiceContainerBuilder->createService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:90
+[10-Jan-2011 08:28:22] PHP   7. ReflectionClass->newInstanceArgs() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:248
+[10-Jan-2011 08:28:22] PHP   8. ThemeWidgets->__construct() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php:0
+[10-Jan-2011 08:28:22] PHP Warning:  Missing argument 3 for ThemeWidgets::__construct() in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php on line 37
+[10-Jan-2011 08:28:22] PHP Stack trace:
+[10-Jan-2011 08:28:22] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:28:22] PHP   2. ThemeWidgetSFContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:21
+[10-Jan-2011 08:28:22] PHP   3. ThemeWidgetSFContainer::getThemeWidgetObject() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php:33
+[10-Jan-2011 08:28:22] PHP   4. sfServiceContainer->__get() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:0
+[10-Jan-2011 08:28:22] PHP   5. sfServiceContainerBuilder->getService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:276
+[10-Jan-2011 08:28:22] PHP   6. sfServiceContainerBuilder->createService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:90
+[10-Jan-2011 08:28:22] PHP   7. ReflectionClass->newInstanceArgs() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:248
+[10-Jan-2011 08:28:22] PHP   8. ThemeWidgets->__construct() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php:0
+[10-Jan-2011 08:28:22] PHP Notice:  Undefined variable: amountOfArticles in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php on line 39
+[10-Jan-2011 08:28:22] PHP Stack trace:
+[10-Jan-2011 08:28:22] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:28:22] PHP   2. ThemeWidgetSFContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:21
+[10-Jan-2011 08:28:22] PHP   3. ThemeWidgetSFContainer::getThemeWidgetObject() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php:33
+[10-Jan-2011 08:28:22] PHP   4. sfServiceContainer->__get() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:0
+[10-Jan-2011 08:28:22] PHP   5. sfServiceContainerBuilder->getService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:276
+[10-Jan-2011 08:28:22] PHP   6. sfServiceContainerBuilder->createService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:90
+[10-Jan-2011 08:28:22] PHP   7. ReflectionClass->newInstanceArgs() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:248
+[10-Jan-2011 08:28:22] PHP   8. ThemeWidgets->__construct() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php:0
+[10-Jan-2011 08:28:22] PHP Notice:  Undefined variable: cacheFileName in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php on line 42
+[10-Jan-2011 08:28:22] PHP Stack trace:
+[10-Jan-2011 08:28:22] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:28:22] PHP   2. ThemeWidgetSFContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:21
+[10-Jan-2011 08:28:22] PHP   3. ThemeWidgetSFContainer::getThemeWidgetObject() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php:33
+[10-Jan-2011 08:28:22] PHP   4. sfServiceContainer->__get() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:0
+[10-Jan-2011 08:28:22] PHP   5. sfServiceContainerBuilder->getService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:276
+[10-Jan-2011 08:28:22] PHP   6. sfServiceContainerBuilder->createService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:90
+[10-Jan-2011 08:28:22] PHP   7. ReflectionClass->newInstanceArgs() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:248
+[10-Jan-2011 08:28:22] PHP   8. ThemeWidgets->__construct() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php:0
+[10-Jan-2011 08:28:22] PHP Fatal error:  Uncaught exception 'Zend_Cache_Exception' with message 'Invalid id or tag : must be a string' in /usr/local/zend/share/ZendFramework/library/Zend/Cache.php:209
+Stack trace:
+#0 /usr/local/zend/share/ZendFramework/library/Zend/Cache/Core.php(667): Zend_Cache::throwException('Invalid id or t...')
+#1 /usr/local/zend/share/ZendFramework/library/Zend/Cache/Core.php(302): Zend_Cache_Core::_validateIdOrTag(NULL)
+#2 /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php(144): Zend_Cache_Core->load(NULL)
+#3 /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php(34): ThemeWidgets->retrieve('cachedDate')
+#4 /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php(21): ThemeWidgetSFContainer::lastCacheDate()
+#5 {main}
+  thrown in /usr/local/zend/share/ZendFramework/library/Zend/Cache.php on line 209
+[10-Jan-2011 08:29:16] PHP Warning:  Missing argument 2 for ThemeWidgets::__construct() in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php on line 37
+[10-Jan-2011 08:29:16] PHP Stack trace:
+[10-Jan-2011 08:29:16] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:29:16] PHP   2. ThemeWidgetSFContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:21
+[10-Jan-2011 08:29:16] PHP   3. ThemeWidgetSFContainer::getThemeWidgetObject() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php:33
+[10-Jan-2011 08:29:16] PHP   4. sfServiceContainer->__get() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:0
+[10-Jan-2011 08:29:16] PHP   5. sfServiceContainerBuilder->getService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:276
+[10-Jan-2011 08:29:16] PHP   6. sfServiceContainerBuilder->createService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:90
+[10-Jan-2011 08:29:16] PHP   7. ReflectionClass->newInstanceArgs() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:248
+[10-Jan-2011 08:29:16] PHP   8. ThemeWidgets->__construct() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php:0
+[10-Jan-2011 08:29:16] PHP Warning:  Missing argument 3 for ThemeWidgets::__construct() in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php on line 37
+[10-Jan-2011 08:29:16] PHP Stack trace:
+[10-Jan-2011 08:29:16] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:29:16] PHP   2. ThemeWidgetSFContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:21
+[10-Jan-2011 08:29:16] PHP   3. ThemeWidgetSFContainer::getThemeWidgetObject() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php:33
+[10-Jan-2011 08:29:16] PHP   4. sfServiceContainer->__get() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:0
+[10-Jan-2011 08:29:16] PHP   5. sfServiceContainerBuilder->getService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:276
+[10-Jan-2011 08:29:16] PHP   6. sfServiceContainerBuilder->createService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:90
+[10-Jan-2011 08:29:16] PHP   7. ReflectionClass->newInstanceArgs() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:248
+[10-Jan-2011 08:29:16] PHP   8. ThemeWidgets->__construct() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php:0
+[10-Jan-2011 08:29:16] PHP Notice:  Undefined variable: amountOfArticles in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php on line 39
+[10-Jan-2011 08:29:16] PHP Stack trace:
+[10-Jan-2011 08:29:16] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:29:16] PHP   2. ThemeWidgetSFContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:21
+[10-Jan-2011 08:29:16] PHP   3. ThemeWidgetSFContainer::getThemeWidgetObject() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php:33
+[10-Jan-2011 08:29:16] PHP   4. sfServiceContainer->__get() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:0
+[10-Jan-2011 08:29:16] PHP   5. sfServiceContainerBuilder->getService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:276
+[10-Jan-2011 08:29:16] PHP   6. sfServiceContainerBuilder->createService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:90
+[10-Jan-2011 08:29:16] PHP   7. ReflectionClass->newInstanceArgs() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:248
+[10-Jan-2011 08:29:16] PHP   8. ThemeWidgets->__construct() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php:0
+[10-Jan-2011 08:29:16] PHP Notice:  Undefined variable: cacheFileName in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php on line 42
+[10-Jan-2011 08:29:16] PHP Stack trace:
+[10-Jan-2011 08:29:17] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:29:17] PHP   2. ThemeWidgetSFContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:21
+[10-Jan-2011 08:29:17] PHP   3. ThemeWidgetSFContainer::getThemeWidgetObject() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php:33
+[10-Jan-2011 08:29:17] PHP   4. sfServiceContainer->__get() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:0
+[10-Jan-2011 08:29:17] PHP   5. sfServiceContainerBuilder->getService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:276
+[10-Jan-2011 08:29:17] PHP   6. sfServiceContainerBuilder->createService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:90
+[10-Jan-2011 08:29:17] PHP   7. ReflectionClass->newInstanceArgs() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:248
+[10-Jan-2011 08:29:17] PHP   8. ThemeWidgets->__construct() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php:0
+[10-Jan-2011 08:29:17] PHP Fatal error:  Uncaught exception 'Zend_Cache_Exception' with message 'Invalid id or tag : must be a string' in /usr/local/zend/share/ZendFramework/library/Zend/Cache.php:209
+Stack trace:
+#0 /usr/local/zend/share/ZendFramework/library/Zend/Cache/Core.php(667): Zend_Cache::throwException('Invalid id or t...')
+#1 /usr/local/zend/share/ZendFramework/library/Zend/Cache/Core.php(302): Zend_Cache_Core::_validateIdOrTag(NULL)
+#2 /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php(144): Zend_Cache_Core->load(NULL)
+#3 /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php(34): ThemeWidgets->retrieve('cachedDate')
+#4 /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php(21): ThemeWidgetSFContainer::lastCacheDate()
+#5 {main}
+  thrown in /usr/local/zend/share/ZendFramework/library/Zend/Cache.php on line 209
+[10-Jan-2011 08:34:46] PHP Warning:  Missing argument 2 for ThemeWidgets::__construct() in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php on line 37
+[10-Jan-2011 08:34:46] PHP Stack trace:
+[10-Jan-2011 08:34:46] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:34:46] PHP   2. ThemeWidgetSFContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:21
+[10-Jan-2011 08:34:46] PHP   3. ThemeWidgetSFContainer::getThemeWidgetObject() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php:33
+[10-Jan-2011 08:34:46] PHP   4. sfServiceContainer->__get() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:0
+[10-Jan-2011 08:34:46] PHP   5. sfServiceContainerBuilder->getService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:276
+[10-Jan-2011 08:34:46] PHP   6. sfServiceContainerBuilder->createService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:90
+[10-Jan-2011 08:34:46] PHP   7. ReflectionClass->newInstanceArgs() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:248
+[10-Jan-2011 08:34:46] PHP   8. ThemeWidgets->__construct() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php:0
+[10-Jan-2011 08:34:46] PHP Warning:  Missing argument 3 for ThemeWidgets::__construct() in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php on line 37
+[10-Jan-2011 08:34:46] PHP Stack trace:
+[10-Jan-2011 08:34:46] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:34:46] PHP   2. ThemeWidgetSFContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:21
+[10-Jan-2011 08:34:46] PHP   3. ThemeWidgetSFContainer::getThemeWidgetObject() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php:33
+[10-Jan-2011 08:34:46] PHP   4. sfServiceContainer->__get() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:0
+[10-Jan-2011 08:34:46] PHP   5. sfServiceContainerBuilder->getService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:276
+[10-Jan-2011 08:34:46] PHP   6. sfServiceContainerBuilder->createService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:90
+[10-Jan-2011 08:34:46] PHP   7. ReflectionClass->newInstanceArgs() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:248
+[10-Jan-2011 08:34:46] PHP   8. ThemeWidgets->__construct() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php:0
+[10-Jan-2011 08:34:46] PHP Notice:  Undefined variable: amountOfArticles in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php on line 39
+[10-Jan-2011 08:34:46] PHP Stack trace:
+[10-Jan-2011 08:34:46] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:34:46] PHP   2. ThemeWidgetSFContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:21
+[10-Jan-2011 08:34:46] PHP   3. ThemeWidgetSFContainer::getThemeWidgetObject() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php:33
+[10-Jan-2011 08:34:46] PHP   4. sfServiceContainer->__get() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:0
+[10-Jan-2011 08:34:46] PHP   5. sfServiceContainerBuilder->getService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:276
+[10-Jan-2011 08:34:46] PHP   6. sfServiceContainerBuilder->createService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:90
+[10-Jan-2011 08:34:46] PHP   7. ReflectionClass->newInstanceArgs() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:248
+[10-Jan-2011 08:34:46] PHP   8. ThemeWidgets->__construct() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php:0
+[10-Jan-2011 08:34:46] PHP Notice:  Undefined variable: cacheFileName in /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php on line 42
+[10-Jan-2011 08:34:46] PHP Stack trace:
+[10-Jan-2011 08:34:46] PHP   1. {main}() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:0
+[10-Jan-2011 08:34:46] PHP   2. ThemeWidgetSFContainer::lastCacheDate() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php:21
+[10-Jan-2011 08:34:46] PHP   3. ThemeWidgetSFContainer::getThemeWidgetObject() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php:33
+[10-Jan-2011 08:34:46] PHP   4. sfServiceContainer->__get() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:0
+[10-Jan-2011 08:34:46] PHP   5. sfServiceContainerBuilder->getService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainer.php:276
+[10-Jan-2011 08:34:46] PHP   6. sfServiceContainerBuilder->createService() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:90
+[10-Jan-2011 08:34:46] PHP   7. ReflectionClass->newInstanceArgs() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/library/sfDI/sfServiceContainerBuilder.php:248
+[10-Jan-2011 08:34:46] PHP   8. ThemeWidgets->__construct() /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php:0
+[10-Jan-2011 08:34:46] PHP Fatal error:  Uncaught exception 'Zend_Cache_Exception' with message 'Invalid id or tag : must be a string' in /usr/local/zend/share/ZendFramework/library/Zend/Cache.php:209
+Stack trace:
+#0 /usr/local/zend/share/ZendFramework/library/Zend/Cache/Core.php(667): Zend_Cache::throwException('Invalid id or t...')
+#1 /usr/local/zend/share/ZendFramework/library/Zend/Cache/Core.php(302): Zend_Cache_Core::_validateIdOrTag(NULL)
+#2 /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgets.php(144): Zend_Cache_Core->load(NULL)
+#3 /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/ThemeWidgetSFContainer.php(34): ThemeWidgets->retrieve('cachedDate')
+#4 /mnt/hgfs/webs/EclipseProjects/local-tests/current/site/htdocs/ThemeWidgets/index.php(21): ThemeWidgetSFContainer::lastCacheDate()
+#5 {main}
+  thrown in /usr/local/zend/share/ZendFramework/library/Zend/Cache.php on line 209
