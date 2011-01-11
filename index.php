@@ -9,14 +9,16 @@ date_default_timezone_set('America/Los_Angeles');
 require_once '../../library/Zend/Loader/Autoloader.php';
 Zend_Loader_Autoloader::getInstance();
 
-include_once 'ThemeWidgetContainer.php';
-include_once('ThemeWidgetSFContainer.php');
+require_once 'ThemeWidgetContainer.php';
+//include_once('ThemeWidgetSFContainer.php');
 // =============================================================================
 
 
 $date = ThemeWidgetContainer::lastCacheDate();
-echo $date;
-echo '<hr>';
+var_dump($date);
 
-$date = ThemeWidgetSFContainer::lastCacheDate();
-echo $date;
+$rss = ThemeWidgetContainer::rssFeed();
+var_dump($rss);
+
+//$tw = ThemeWidgetContainer::main();
+//var_dump($tw);

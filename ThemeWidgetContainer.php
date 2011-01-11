@@ -1,16 +1,36 @@
 <?php
-//require_once '../../library/sfDI/sfServiceContainerAutoloader.php';
-//sfServiceContainerAutoloader::register();
-
-include_once('ThemeWidgets.php');
+require_once '../../library/sfDI/sfServiceContainerAutoloader.php';
 
 class ThemeWidgetContainer {
 	
+	protected static $_container = NULL;
 	
+	public static function main() {
+		//self::dumpMockXml();
+	}
 	
-	const CACHE_NAME = 'CacheFile';
-	const MAX_RSS_ARTICLES = 2;										// number of articles to pull
-	const RSS_URL = "http://feeds.feedburner.com/benefitsworld";	// default RSS link
+	private static function dumpMockXml() {
+		sfServiceContainerAutoloader::register();
+		$container = new sfServiceContainerBuilder();
+			
+		$container->
+			register('themeWidget', 'ThemeWidgets')->
+			setFile('ThemeWidgets.php')->
+			addArgument(array(
+				'url' => '%themeWidget.url%',
+				'amountOfArticles' => '%themeWidget.amountOfArticles%',
+				'cacheName'	=> '%themeWidget.cacheName%'
+		))->setShared(false);
+		
+		$container->addParameters(array(
+			'themeWidget.url' => "http://feeds.feedburner.com/benefitsworld",
+			'themeWidget.amountOfArticles' => 2,
+			'themeWidget.cacheName' => 'CacheFile'
+		));
+		
+		$dumper = new sfServiceContainerDumperXml($container);
+		file_put_contents('./container.xml', $dumper->dump());
+	}
 	
 	/**
 	 * @return cached version of a sidebar image
@@ -37,7 +57,21 @@ class ThemeWidgetContainer {
 	}
 	
 	private static function getThemeWidgetObject() {
-		return ThemeWidgets::factory(self::RSS_URL, self::MAX_RSS_ARTICLES, self::CACHE_NAME);
+		
+		sfServiceContainerAutoloader::register();
+		
+		self::$_container = new sfServiceContainerBuilder();
+		$loader = new sfServiceContainerLoaderFileXml(self::$_container, array('config/default/'));
+		$loader->load('config/container.xml');
+		
+		// It's possible to override specific variables once the container has been loaded.
+		
+		self::$_container->addParameters(array(
+			'themeWidget.amountOfArticles' => 2
+		));
+		
+		
+		return self::$_container->themeWidget;
 	}
 
 }

@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony-project.org/2.0/container">
+	<imports>
+   	 <import resource="config.ini" class="sfServiceContainerLoaderFileIni" />
+  </imports>
+  <parameters>
+  	<!-- over ride param's -->
+    <parameter key="themewidget.amountofarticles">10</parameter>
+    <parameter key="themewidget.rssRefreshTime">11</parameter>
+    <parameter key="themewidget.cacheName">CacheFileNewName</parameter>
+    <parameter key="themewidget.zendRssClass">Zend_Feed_Rss</parameter>
+    <parameter key="themewidget.zendCacheClass">Zend_Cache</parameter>
+  </parameters>
+  <services>
+    <service id="themeWidget" class="ThemeWidgets" shared="false">
+      <file>ThemeWidgets.php</file>
+      <argument type="collection">
+		<argument key="cacheName">%themewidget.cacheName%</argument>   
+		<argument key="rssUrl">%themewidget.rssUrl%</argument>
+        <argument key="amountOfArticles">%themewidget.amountOfArticles%</argument>     
+		<argument key="rssRefreshTime">%themewidget.rssRefreshTime%</argument>
+        <argument key="sideimageDir">%themewidget.sideimageDir%</argument>
+        <argument key="tmpDir">%themewidget.tmpDir%</argument>
+      </argument>
+      <argument key="zendRssReader">%themewidget.zendRssClass%</argument>
+      <argument key="zendCacheReader">%themewidget.zendCacheClass%</argument>
+      <!-- 
+      <call method="setZendCacheReader">
+    		<argument key="zendRssClass">%themewidget.zendRssClass%</argument>
+    	</call>
+    	-->
+    </service>
+  </services>
+</container>
