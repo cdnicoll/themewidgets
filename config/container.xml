@@ -22,14 +22,9 @@
 		<argument key="rssRefreshTime">%themewidget.rssRefreshTime%</argument>
         <argument key="sideimageDir">%themewidget.sideimageDir%</argument>
         <argument key="tmpDir">%themewidget.tmpDir%</argument>
+        <argument key="zendRssReader">%themewidget.zendRssClass%</argument>
+     	<argument key="zendCacheReader">%themewidget.zendCacheClass%</argument>
       </argument>
-      <argument key="zendRssReader">%themewidget.zendRssClass%</argument>
-      <argument key="zendCacheReader">%themewidget.zendCacheClass%</argument>
-      <!-- 
-      <call method="setZendCacheReader">
-    		<argument key="zendRssClass">%themewidget.zendRssClass%</argument>
-    	</call>
-    	-->
     </service>
   </services>
 </container>

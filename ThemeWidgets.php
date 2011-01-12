@@ -35,7 +35,7 @@ class ThemeWidgets
 		$this->_cacheFileName = $cacheFileName;
 	}
 	*/
-	public function __construct(Array $config = array(), $zendRssReader, $zendCacheReader) {		
+	public function __construct(Array $config = array()) {		
 		// ========= RSS URL =========
 		if(isset($config['rssUrl'])) {
 			$this->_rssUrl = $config['rssUrl'];
@@ -91,19 +91,32 @@ class ThemeWidgets
 		}
 		
 		// ========= Zend RSS Reader =========
-		$this->_zendRssReader = new $zendRssReader($this->_rssUrl);
+		if(isset($config['zendRssReader'])) {
+			$this->_zendRssReader = new $config['zendRssReader']($this->_rssUrl);
+		}
+		else {
+			throw new Exception("@param zendRssReader is missing");
+		}
+		
 		
 		// ========= Zend Cache Reader =========
-		$frontendOptions = array (
-			'lifetime' => $this->_cacheExpireTime,
-			'automatic_serialization' => true
-		);
+		if(isset($config['zendCacheReader'])) {
+			$frontendOptions = array (
+				'lifetime' => $this->_cacheExpireTime,
+				'automatic_serialization' => true
+			);
 		
-		$backendOptions = array(
-			'cache_dir' => $this->_tmpDir
-		);
+			$backendOptions = array(
+				'cache_dir' => $this->_tmpDir
+			);
 		
-		$this->_zendCacheReader = $zendCacheReader::factory('Core','File',$frontendOptions,$backendOptions);
+			$this->_zendCacheReader = $config['zendCacheReader']::factory('Core','File',$frontendOptions,$backendOptions);
+		}
+		else {
+			throw new Exception("@param zendCacheReader is missing");
+		}
+		
+		
 					
 	}
 	
