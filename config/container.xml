@@ -1,30 +1,51 @@
-<?xml version="1.0" ?>
-
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2009 sp1 (http://www.altova.com) by Torsten Lenk (GroupHEALTH Global Partners) -->
 <container xmlns="http://symfony-project.org/2.0/container">
 	<imports>
-   	 <import resource="config.ini" class="sfServiceContainerLoaderFileIni" />
-  </imports>
-  <parameters>
-  	<!-- over ride param's -->
-    <parameter key="themewidget.amountofarticles">10</parameter>
-    <parameter key="themewidget.rssRefreshTime">11</parameter>
-    <parameter key="themewidget.cacheName">CacheFileNewName</parameter>
-    <parameter key="themewidget.zendRssClass">Zend_Feed_Rss</parameter>
-    <parameter key="themewidget.zendCacheClass">Zend_Cache</parameter>
-  </parameters>
-  <services>
-    <service id="themeWidget" class="ThemeWidgets" shared="false">
-      <file>ThemeWidgets.php</file>
-      <argument type="collection">
-		<argument key="cacheName">%themewidget.cacheName%</argument>   
-		<argument key="rssUrl">%themewidget.rssUrl%</argument>
-        <argument key="amountOfArticles">%themewidget.amountOfArticles%</argument>     
-		<argument key="rssRefreshTime">%themewidget.rssRefreshTime%</argument>
-        <argument key="sideimageDir">%themewidget.sideimageDir%</argument>
-        <argument key="tmpDir">%themewidget.tmpDir%</argument>
-        <argument key="zendRssReader">%themewidget.zendRssClass%</argument>
-     	<argument key="zendCacheReader">%themewidget.zendCacheClass%</argument>
-      </argument>
-    </service>
-  </services>
+		<import resource="config.ini" class="sfServiceContainerLoaderFileIni"/>
+	</imports>
+	<parameters>
+		<!-- RSS Reader Params -->
+		<parameter key="rssReader.class">RssReader</parameter>
+		<parameter key="rssReader.url">http://feeds.feedburner.com/benefitsworld</parameter>
+		<parameter key="rssReader.maxArticles">5</parameter>
+		<!-- Zend_Cache Params  -->
+		<parameter key="cacheReader.lifetime">11</parameter>
+		<parameter key="cacheReader.tmpDir">../../../../files/localtests-tmp/</parameter>
+		<!-- ThemeWidget Params -->
+		<parameter key="themewidget.rssRefreshTime">11</parameter>
+		<parameter key="themewidget.cacheName">CacheFileNewName</parameter>
+	</parameters>
+	<services>
+		<!-- create an rss reader object -->
+		<service id="rssReader" class="%rssReader.class%">
+			<file>lib/themewidget/RssReader.php</file>
+			<argument type="collection">
+				<argument key="url">%rssReader.url%</argument>
+				<argument key="maxArticles">%rssReader.maxArticles%</argument>
+			</argument>
+		</service>
+		<!-- create zend cache reader object -->
+		<service id="cacheReader" class="Zend_Cache" constructor="factory">
+			<argument>Core</argument>
+			<argument>File</argument>
+			<argument type="collection">
+				<argument key="lifetime">%cacheReader.lifetime%</argument>
+				<argument key="automatic_serialization">true</argument>
+			</argument>
+			<argument type="collection">
+				<argument key="cache_dir">%cacheReader.tmpDir%</argument>
+			</argument>
+		</service>
+		<!-- create the theme widget object -->
+		<service id="themeWidget" class="ThemeWidgets" shared="false">
+			<file>lib/themewidget/ThemeWidgets.php</file>
+			<argument type="collection">
+				<argument key="cacheName">%themewidget.cacheName%</argument>
+				<argument key="sideimageDir">%themewidget.sideimageDir%</argument>
+				<argument type="service" id="rssReader" key="rssReader" />
+				<argument type="service" id="cacheReader" key="cacheReader" />
+			</argument>
+		</service>
+	</services>
 </container>

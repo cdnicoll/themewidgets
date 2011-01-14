@@ -1,12 +1,12 @@
 <?php
 require_once '../../library/sfDI/sfServiceContainerAutoloader.php';
-
 class ThemeWidgetContainer {
 	
 	protected static $_container = NULL;
 	
 	public static function main() {
 		//self::dumpMockXml();
+		$tw = self::getThemeWidgetObject();
 	}
 	
 	private static function dumpMockXml() {
@@ -56,22 +56,35 @@ class ThemeWidgetContainer {
 		return $tw->retrieve($tw::KEY__LAST_CACHED_DATE);
 	}
 	
+	public static function dumpThemeWidgetToPhp() {
+		sfServiceContainerAutoloader::register();
+		
+		$container = new sfServiceContainerBuilder();
+		$loader = new sfServiceContainerLoaderFileXml($container, array('config/default/'));
+		
+		$loader->load('./config/container.xml');
+		
+		$dumper = new sfServiceContainerDumperPhp($container);
+		$code = $dumper->dump(array('class' => 'Container'));
+		file_put_contents('./ThemeWidgetDump.php', $code);
+		
+	}
+	
 	private static function getThemeWidgetObject() {
 		
 		sfServiceContainerAutoloader::register();
 		
-		self::$_container = new sfServiceContainerBuilder();
-		$loader = new sfServiceContainerLoaderFileXml(self::$_container, array('config/default/'));
-		$loader->load('config/container.xml');
+		$container = new sfServiceContainerBuilder();
+		$loader = new sfServiceContainerLoaderFileXml($container, array('config/default/'));
+		$loader->load('./config/container.xml');
 		
 		// It's possible to override specific variables once the container has been loaded.
 		
-		self::$_container->addParameters(array(
+		$container->addParameters(array(
 			'themeWidget.amountOfArticles' => 2
 		));
 		
 		
-		return self::$_container->themeWidget;
+		return $container->themeWidget;
 	}
-
 }
