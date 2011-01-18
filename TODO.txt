@@ -1,0 +1,14 @@
+[] Where should the mock classes be stored
+	- Production environment
+	- Test environment
+
+[] Break apart container.xml
+	- "container_".$environment.".xml"
+
+[] Relationship ini vs xml
+	- how should parameter's be populated
+
+[] ZendCache Custom backend for Mock
+
+[] Where should container objects be created?
+	- where is the config be loaded
