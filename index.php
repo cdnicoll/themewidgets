@@ -1,8 +1,6 @@
 <?php
 // ================================= SET UP =====================================
 include_once 'Bootstrap.php';
-
-// namespace: lib\themewidge\
 include_once 'lib/themewidget/ThemeWidgetContainer.php';
 // =============================================================================
 

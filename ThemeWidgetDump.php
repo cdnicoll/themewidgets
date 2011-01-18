@@ -11,7 +11,7 @@ class Container extends sfServiceContainer
 
   protected function getRssReaderService()
   {
-    require_once 'lib/themewidget/RssReader.php';
+    require_once 'lib/themewidget/'.$this->getParameter('rssreader.class').'.php';
 
     if (isset($this->shared['rssReader'])) return $this->shared['rssReader'];
 

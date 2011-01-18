@@ -19,7 +19,7 @@
 	<services>
 		<!-- create an rss reader object -->
 		<service id="rssReader" class="%rssReader.class%">
-			<file>lib/themewidget/RssReader.php</file>
+			<file>lib/themewidget/%rssReader.class%.php</file>
 			<argument type="collection">
 				<argument key="url">%rssReader.url%</argument>
 				<argument key="maxArticles">%rssReader.maxArticles%</argument>
