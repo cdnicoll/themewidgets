@@ -8,3 +8,5 @@ date_default_timezone_set('America/Los_Angeles');
 require_once '../../library/Zend/Loader/Autoloader.php';
 Zend_Loader_Autoloader::getInstance();
 
+//define("WORKING_ENV","production");
+define("WORKING_ENV","development");

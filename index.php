@@ -1,17 +1,10 @@
 <?php
 // ================================= SET UP =====================================
 include_once 'Bootstrap.php';
-include_once 'lib/themewidget/ThemeWidgetContainer.php';
+include_once 'lib/DisplayLogin.class.php';
 // =============================================================================
 
+//$smarty->assign('environment',WORKING_ENV);
+//$smarty->display("login.tpl");
 
-$date = ThemeWidgetContainer::lastCacheDate();
-var_dump($date);
-
-$rss = ThemeWidgetContainer::rssFeed();
-var_dump($rss);
-
-ThemeWidgetContainer::dumpThemeWidgetToPhp();
-
-//$tw = ThemeWidgetContainer::main();
-//var_dump($tw);
+$display = new DisplayLogin();
