@@ -12,7 +12,7 @@ class DisplayLogin
 	{
 		$this->_smarty = new Smarty_Main();
 		$this->_body = 'login.tpl';
-		$this->_tw = $this->buildThemeWidget();
+		$this->_tw = $this->buildThemeWidget();		// call the module bootstrap function
 				
 		$this->_smarty->assign('environment',WORKING_ENV);
 		//$this->_smarty->assign('rss',$this->_tw->retrieve($this->_tw::KEY__RSS_FEED));
@@ -27,13 +27,7 @@ class DisplayLogin
 		$container = new sfServiceContainerBuilder();
 		$loader = new sfServiceContainerLoaderFileXml($container, array('config/default/'));
 		$loader->load('./config/container_'.WORKING_ENV.'.xml');
-		
-		// It's possible to override specific variables once the container has been loaded.
-		
-		$container->addParameters(array(
-			'themeWidget.amountOfArticles' => 2
-		));
-		
+
 		
 		return $container->themeWidget;
 	}

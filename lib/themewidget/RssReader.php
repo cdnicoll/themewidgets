@@ -1,15 +1,13 @@
 <?php
 
-require_once ('IRssReader.php');
+require_once ('RssReaderAbstract.php');
 
-class RssReader implements IRssReader {
+class RssReader extends RssReaderAbstract {
 	
-	// url
-	// maxArticles
-	protected $_config;
-	protected $_rss = array();
+	
 	
 	public function __construct(array $config = array()) {
+		
 		$this->_config = $config;		
 		
 		$url = $this->_config['url'];
@@ -21,13 +19,7 @@ class RssReader implements IRssReader {
 		$this->_rss = $this->createRssObject(new Zend_Feed_Rss($url));
 	}
 	
-	public function getRss() {
-		return $this->_rss;
-	}
 	
-	public function setRss(array $rss) {
-		$this->_rss = $rss;
-	}
 	
 	public function createRssObject($feed) {
 		// get the rss feed

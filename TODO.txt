@@ -12,3 +12,8 @@
 
 [] Where should container objects be created?
 	- where is the config be loaded
+
+[] explain how working with modules can better enhance WEBS
+
+[] module loader will load a class based on the module config
+	- Login will need to load the ThemeWidget
