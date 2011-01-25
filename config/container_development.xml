@@ -6,7 +6,7 @@
 	</imports>
 	<parameters>
 		<!-- RSS Reader Params -->
-		<parameter key="rssReader.class">RssReader</parameter>
+		<parameter key="rssReader.class">RssReaderMock</parameter>
 		<parameter key="rssReader.url">http://feeds.feedburner.com/benefitsworld</parameter>
 		<parameter key="rssReader.maxArticles">2</parameter>
 		<!-- Zend_Cache Params  -->

@@ -14,7 +14,7 @@ class Smarty_Main extends Smarty {
 		$this->cache_dir    = 'smarty/cache/';
 		
 		$this->debugging = false;
-		$this->caching = true;
+		$this->caching = false;
 		$this->cache_lifetime = 120;		
 	}
 }
