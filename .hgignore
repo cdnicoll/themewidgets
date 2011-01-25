@@ -2,3 +2,4 @@ glob:Tests/report/
 glob:error_log.txt
 glob:smarty/cache/
 glob:smarty/templates_c/
+glob:library/
